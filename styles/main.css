@@ -13,8 +13,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 1024px;
-  max-width: 1200px;
   height: 60px;
   padding: 0 50px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -24,6 +22,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0; }
 
@@ -203,6 +204,7 @@
   padding: 10px 0; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  min-width: 1024px; }
 
 /*# sourceMappingURL=main.css.map */
