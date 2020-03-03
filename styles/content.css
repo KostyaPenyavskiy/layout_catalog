@@ -92,6 +92,13 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase; }
+    .card__button:hover {
+      color: #00acdc;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background-color: #fff;
+      border: 1px solid #00acdc;
+      padding: 10px 0; }
 
 .stars {
   display: -webkit-box;
@@ -120,13 +127,5 @@
 .star:last-child {
   background: url("../images/star.svg") no-repeat;
   background-position: center; }
-
-.card__button:hover {
-  color: #00acdc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #00acdc;
-  padding: 10px 0; }
 
 /*# sourceMappingURL=content.css.map */
