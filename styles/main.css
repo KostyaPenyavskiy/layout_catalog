@@ -43,7 +43,9 @@
   line-height: 60px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .is-active {
   position: relative;
@@ -106,9 +108,14 @@
             justify-content: center;
     margin-top: 30px;
     margin-bottom: 45px; }
-  .card__product_photo img {
-    width: 160px;
-    height: 134px; }
+    .card__product_photo img {
+      width: 160px;
+      height: 134px;
+      -webkit-transition: 1s;
+      transition: 1s; }
+    .card__product_photo img:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .card__description {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -146,9 +153,12 @@
             align-items: flex-end;
     margin-bottom: 20px; }
   .card__button {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     text-align: center;
     font-weight: bold;
+    border: 1px solid #00acdc;
     font-size: 14px;
     line-height: 18px;
     padding: 11px 0;
@@ -156,14 +166,12 @@
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: 1s;
+    transition: 1s; }
     .card__button:hover {
       color: #00acdc;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      background-color: #fff;
-      border: 1px solid #00acdc;
-      padding: 10px 0; }
+      background-color: #fff; }
 
 .stars {
   display: -webkit-box;
@@ -192,6 +200,22 @@
 .star:last-child {
   background: url("../images/star.svg") no-repeat;
   background-position: center; }
+
+@-webkit-keyframes smooth-scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+@keyframes smooth-scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 body {
   margin: 0;

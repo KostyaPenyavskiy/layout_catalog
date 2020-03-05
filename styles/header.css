@@ -43,7 +43,9 @@
   line-height: 60px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black; }
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .is-active {
   position: relative;
