@@ -4,17 +4,17 @@
   font-size: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-template-columns: auto 1fr;
   height: 60px;
   padding: 0 50px;
+  margin-bottom: 50px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
   .header-logo {
@@ -22,21 +22,16 @@
     height: 40px; }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   margin: 0; }
 
 .item {
-  margin-right: 20px;
   list-style: none; }
-
-.item:last-child {
-  margin-right: 0; }
 
 .menu-link {
   display: inline-block;
@@ -66,16 +61,13 @@
   color: #00acdc; }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 944px;
-  margin: 50px auto 19px; }
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
 
 .card {
   display: -webkit-box;
@@ -93,7 +85,6 @@
           box-sizing: border-box;
   width: 200px;
   height: 403px;
-  margin-bottom: 50px;
   background: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px; }
@@ -105,12 +96,12 @@
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 45px; }
+            justify-content: center; }
     .card__product_photo img {
       width: 160px;
       height: 134px;
+      margin-top: 30px;
+      margin-bottom: 45px;
       -webkit-transition: 1s;
       transition: 1s; }
     .card__product_photo img:hover {
@@ -200,22 +191,6 @@
 .star:last-child {
   background: url("../images/star.svg") no-repeat;
   background-position: center; }
-
-@-webkit-keyframes smooth-scale {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
-
-@keyframes smooth-scale {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
 
 body {
   margin: 0;

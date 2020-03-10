@@ -1,14 +1,11 @@
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 944px;
-  margin: 50px auto 19px; }
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
 
 .card {
   display: -webkit-box;
@@ -26,7 +23,6 @@
           box-sizing: border-box;
   width: 200px;
   height: 403px;
-  margin-bottom: 50px;
   background: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px; }
@@ -38,12 +34,12 @@
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 45px; }
+            justify-content: center; }
     .card__product_photo img {
       width: 160px;
       height: 134px;
+      margin-top: 30px;
+      margin-bottom: 45px;
       -webkit-transition: 1s;
       transition: 1s; }
     .card__product_photo img:hover {
@@ -133,21 +129,5 @@
 .star:last-child {
   background: url("../images/star.svg") no-repeat;
   background-position: center; }
-
-@-webkit-keyframes smooth-scale {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
-
-@keyframes smooth-scale {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  to {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); } }
 
 /*# sourceMappingURL=content.css.map */
